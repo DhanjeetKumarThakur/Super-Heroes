@@ -1,0 +1,66 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  :root{
+    --primary-color:#08196d;
+    --secondary-color: white;
+  }
+  body{
+    background-color:var(--primary-color); 
+    color: var(--primary-color);
+  }
+  .container-center{
+    width: 80%;
+    height:100%;
+    margin:1rem auto;
+  /*   justify-content:center; */
+  }
+  
+  .container{ 
+      background-color: var(--secondary-color);
+      padding:2rem;
+  /*     text-align: center; */
+  }
+  .container .col{
+    width: inherit;
+    height: inherit;
+    padding:2rem 1rem;
+  }
+  .content{
+    display:flex;
+  }
+  
+  #name {
+    font-size:25px;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .content{
+      display:grid;
+    }
+  }
+  
+  .searchBox{
+    text-align:center;
+    padding:inherit;
+  }
+  #searchButton, #newHeroButton{
+    height: 30px;
+    margin-bottom:1rem;
+    color: var(--primary-color);
+    font-weight:bold;
+  }
+  
+  #searchInput{
+    height:24px;
+    border:1px solid var(--primary-color);
+  }
+  .title{
+    font-size: 50px;
+    text-align: center;
+    margin-top:0rem;
+    padding-top: 0rem;
+  }
+  
