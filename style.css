@@ -36,22 +36,17 @@ html {
     font-size:25px;
   }
   
-  @media screen and (max-width: 550px) {
-    .content{
-      display:grid;
-    }
-  }
-  
   .searchBox{
     text-align:center;
     padding:inherit;
   }
   #searchButton, #newHeroButton{
-    height: 30px;
-    margin-bottom:1rem;
-    color: var(--primary-color);
-    font-weight:bold;
-  }
+  height: 30px;
+  margin-bottom:1rem;
+  color: var(--primary-color);
+  font-weight:bold;
+  cursor: pointer;
+}
   
   #searchInput{
     height:24px;
@@ -63,4 +58,17 @@ html {
     margin-top:0rem;
     padding-top: 0rem;
   }
+
+
+@media screen and (max-width: 550px) {
+  .content{
+    display:grid;
+  }
+
+  .container .col {
+    margin-right: 1rem;
+    padding-right: 1rem;
+  }
+}
+
   
